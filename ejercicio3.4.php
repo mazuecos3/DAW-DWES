@@ -14,16 +14,16 @@ background-color: #CFFF96;
         <h1>
             <?php
 
-           $a = 2;
-           $b = 2;
-          
+$articulos="10";
+           
+while ($articulos >0 )
+{
+    echo "vendiendo un art&iacuteculo...";
+    $articulos--;
+    echo "Hecho: quedan $articulos en stock. <br>";
+}
 
-        if (++$a == $b++) {
-           echo"Iguales <br>";
-        } else {
-            echo"Distinto <br>";
-        }
-
+echo "Nos hemos quedado sin art&iacuteculos.";
        
             ?>   
            

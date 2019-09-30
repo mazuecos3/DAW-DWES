@@ -1,3 +1,4 @@
+ 
 
 <html>
 
@@ -14,13 +15,10 @@ background-color: #CFFF96;
         <h1>
             <?php
 
+        $year = 1900;
 
-           $a = 4.5;
-           if (is_int($a)) {
-              echo("Es entero");
-           } else {
-              echo("No es entero");
-           }
+        echo ( ($year%4 == 0 && $year%100 != 0) || $year%400 == 0 ) ? "$year es bisiesto" : "$year no es bisiesto";
+
       
             ?>   
            
