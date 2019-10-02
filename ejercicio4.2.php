@@ -1,4 +1,3 @@
- 
 
 <html>
 
@@ -15,23 +14,17 @@ background-color: #CFFF96;
         <h1>
             <?php
 
+           $a = 2;
+           $b = 2;
+          
 
-         $a = 0;
+        if (++$a == $b++) {
+           echo"A es Igual a B <br>";
+        } else {
+            echo"A es distinto de B <br>";
+        }
 
-         $b = 0;
-
-         $a++;
-         ++$a;
-         echo "a = $a<br>";
-      
-         $b++;
-         ++$b;
-
-         echo "b = $b <br>";
-
-         $productos = 4;
-         echo ($a == $b) ? "a=$a y b=$b son iguales" : "a=$a y b=$b no son iguales";
- echo ($a == $b) ? "a=$a y b=$b son iguales" : "a=$a y b=$b no son iguales";
+       
             ?>   
            
         </h1>
