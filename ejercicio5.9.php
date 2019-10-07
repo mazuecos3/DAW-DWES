@@ -34,8 +34,7 @@
            
             do
             {
-                $casaX = rand (0,$tamañoMapa-1);
-                $casaY = rand (0,$tamañoMapa-1);
+               
                 $palomaX = rand (0,$tamañoMapa-1);
                 $palomaY = rand (0,$tamañoMapa-1);
                 $paloma2X = rand (0,$tamañoMapa-1);
@@ -81,11 +80,7 @@
                 {
                     for ($x=0; $x<$tamañoMapa; $x++)
                     {
-                        if ($x == $casaX && $y == $casaY)
-                        {
-                            echo '<span class="casa">+</span>'; //Casa
-                        }
-                        elseif ($x == $palomaX && $y == $palomaY)
+                        if ($x == $palomaX && $y == $palomaY)
                         {
                             echo '<span class="paloma">%</span>'; #Paloma
                         }
@@ -106,9 +101,10 @@
                
                 echo "<pre>palomax=$palomaX palomaY=$palomaY\n";
                 echo "paloma2x=$paloma2X paloma2Y=$paloma2Y</div>\n";
+               
              
                
-            } while (($palomaX != $casaX || $palomaY != $casaY) || ($paloma2X != $casaX || $paloma2Y != $casaY)  );
+            } while ($palomaX != $paloma2X || $palomaY != $paloma2Y)  ;
           
             ?>   
            
