@@ -6,9 +6,9 @@
 
         <?php
 
-        $cadena = "patataperr";
+        $cadena = "patata";
 
-        for ($i=10; $i >= 0; $i--) { 
+        for ($i=strlen($cadena); $i >= 0; $i--) { 
             $cadena1 .= $cadena[$i];
           
         }

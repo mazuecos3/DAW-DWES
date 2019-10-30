@@ -118,6 +118,8 @@
                 }
                
                 echo "</pre>pelotaX=$pelotaX pelotaY=$pelotaY\n";
+                echo "</pre>pelotaX1=$pelotaX1 pelotaY1=$pelotaY1\n";
+                echo "</pre>pelotaX2=$pelotaX2 pelotaY2=$pelotaY2\n";
                 echo "</pre>Rebotes:  $rebotes\n</div>";
               
             } while ($rebotes<18);

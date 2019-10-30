@@ -11,19 +11,13 @@
         margin-left:50%;
        
     }
-    
-    
-   
-   
        </style>
     </head>
     <body>
-       
+
            <table>
              
             <?php
-        
-      
         $n1 = 0;
         $n2 = 1;
         echo"<tr>";

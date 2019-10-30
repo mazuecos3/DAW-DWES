@@ -51,7 +51,7 @@
             $diagonalX2 = 1;
             $diagonalY2 = 1;
 
-            $barraY = 2;
+            $barra = 2;
            
             #Rebotes
 
@@ -98,11 +98,9 @@
                 
                 
                
-                if ($barra<7) {
+                
                     $barra++;
-                } else {
-                    $barra--;
-                }
+                
                 
                 #Mostrar el mapa actual
                 echo '<div class="map" style="width: ' . $tamañoMapa . 'em;"><pre>';
@@ -122,11 +120,7 @@
                         } 
                         elseif ( ($x == $barra || $x == $barra - 1 || $x == $barra - 2) && $i == 9) {
                             echo '<span class="casa">=</span>'; 
-                        } elseif ( ($x == $barra || $x == $barra - 1 || $x == $barra - 2) && $i == 9) {
-                            echo '<span class="casa">=</span>'; 
-                        }
-
-                        
+                        }      
                         else{
                             echo '<span class="aire">.</span>'; 
                         

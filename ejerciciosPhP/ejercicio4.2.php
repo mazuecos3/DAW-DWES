@@ -18,12 +18,8 @@ background-color: #CFFF96;
            $b = 2;
           
 
-        if (++$a == $b++) {
-           echo"A es Igual a B <br>";
-        } else {
-            echo"A es distinto de B <br>";
-        }
-
+        echo (++$a == $b++) ? "Son iguales" :"Son diferentes";
+           
        
             ?>   
            

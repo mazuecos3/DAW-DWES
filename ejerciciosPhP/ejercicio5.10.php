@@ -36,37 +36,40 @@
             $pelotaX= rand (1,$tamañoMapa-1);
             $pelotaY = rand (1,$tamañoMapa-1);
             
-        
+            #Diagonales
+
             $diagonalX = 1;
             $diagonalY = 1;
-            $rebotes=0;
-           
-         
-           
+
+            #Rebotes
+
+            $rebote=0;
+
+        
             do
             {
   
-                if($pelotaY==0 || $pelotaY+1==$tamañoMapa){
-                    $diagonalY=$diagonalY*-1;
+                if($pelotaY == 0 || $pelotaY + 1 == $tamañoMapa){
+                    $diagonalY = $diagonalY *  - 1;
                     $rebotes++;
                 }
-                if($pelotaX==0 || $pelotaX+1==$tamañoMapa){
-                    $diagonalX=$diagonalX*-1;
+                if($pelotaX == 0 || $pelotaX + 1 == $tamañoMapa){
+                    $diagonalX = $diagonalX * - 1;
                     $rebotes++;
                 }
-                $pelotaX+=$diagonalX;
-                $pelotaY+=$diagonalY;
+                $pelotaX = $pelotaX + $diagonalX;
+                $pelotaY = $pelotaY + $diagonalY;
                 
                    
                 #Mostrar el mapa actual
                 echo '<div class="map" style="width: ' . $tamañoMapa . 'em;"><pre>';
                 # Recuérdese que con la etiqueta <pre> los saltos de línea que haya se reflejan en la pantalla
                
-                for ($y=0; $y<$tamañoMapa; $y++)
+                for ($i=0; $i<$tamañoMapa; $i++)
                 {
                     for ($x=0; $x<$tamañoMapa; $x++)
                     {
-                        if ($x == $pelotaX && $y == $pelotaY){
+                        if ($x == $pelotaX && $i == $pelotaY){
                             echo '<span class="casa">o</span>'; 
                        
                         }else{
