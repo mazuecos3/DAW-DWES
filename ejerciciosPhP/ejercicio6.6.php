@@ -18,6 +18,7 @@
 /*
 Añada un grado más de dificultad al decodificador, intercambiando parejas de letras consecutivas
 */
+//patataea
                $cadena = "patata";
                $cadenaFinal ="";
                $cadenaFinal1 ="";
