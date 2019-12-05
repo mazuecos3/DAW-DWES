@@ -14,6 +14,7 @@
                 $cadena[$i] = "e";
                 $cadenaFinal .= $cadena[$i];
             }else {
+                
                 $cadenaFinal .= $cadena[$i];
             }
             

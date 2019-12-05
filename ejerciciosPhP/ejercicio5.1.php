@@ -6,6 +6,7 @@
 
         text-align: center;
         border: 1px solid;
+        color: red;
     }
 
     

@@ -26,7 +26,7 @@ border: 3px solid green;
 
         $cadena = "oscar3mazuecos@hotmail.com";
 
-
+        echo "<p class='texto'>$cadena<br>";
        if (substr($cadena, -4, 4) && strstr($cadena,".com")) {
         echo "<p class='texto'>Este correo electronico si que contiene: .com<br>";
        }else {

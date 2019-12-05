@@ -21,14 +21,9 @@ border: 3px solid green;
     </head>
  
     <body>
- 
- 
- 
-            <?php
+      <?php
 
-
-
-$cadena = "tocar";
+$cadena = "gato";
 $cadena2 = "";
 $cadena3 = "";
 $longitudCadena = strlen($cadena);
@@ -41,7 +36,6 @@ for($i=0; $i<$longitudCadena; $i+= 2) {
     $cadena3 .= $cadena2[1].$cadena2[0];
     
   
-   
 }
  
 echo "<p class='texto'>Cadena Retocada : $cadena3<br></p>"
