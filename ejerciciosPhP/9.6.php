@@ -4,20 +4,16 @@
     </head>
     <body>
         <?php
-       
-         
+
             $nombre = $_GET["nombre"];
             $sueldo = $_GET["sueldo"];
             
-           
-
             $servidor = "localhost";
             $username = "miusuario";
             $password = "mipassword";
             $basedatos = "bdprueba";  
             $conn = mysqli_connect($servidor, $username, $password, $basedatos);
- 
-          
+
             if (!$conn) {
                 die("Conexi&ocacuten fallida: " . mysqli_connect_error());
             }
@@ -40,8 +36,6 @@
                 }  
 
             mysqli_close($conn);
-          
- 
         ?>
     </body>
 </html>
